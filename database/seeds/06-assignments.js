@@ -9,7 +9,7 @@ exports.seed = function(knex) {
           sprint: "User Interface and Git",
           name: "User Interface I",
           date: "2020-03-30",
-          url: "",
+          url: "https://learn.lambdaschool.com/web1/module/recl0IyzS2Vl89lZa",
           type: "module",
           cohort_id: 1
         },
@@ -19,7 +19,7 @@ exports.seed = function(knex) {
           sprint: "User Interface and Git",
           name: "Git for Web Development",
           date: "2020-03-30",
-          url: "",
+          url: "https://learn.lambdaschool.com/web1/module/rect59e95N6OSvoCd",
           type: "module",
           cohort_id: 1
         },
@@ -29,7 +29,7 @@ exports.seed = function(knex) {
           sprint: "User Interface and Git",
           name: "User Interface II",
           date: "2020-03-30",
-          url: "",
+          url: "https://learn.lambdaschool.com/web1/module/recGvXyWT6AvGtMHR",
           type: "module",
           cohort_id: 1
         },
@@ -39,7 +39,7 @@ exports.seed = function(knex) {
           sprint: "User Interface and Git",
           name: "User Interface III",
           date: "2020-03-30",
-          url: "",
+          url: "User Interface III",
           type: "module",
           cohort_id: 1
         },
@@ -50,7 +50,7 @@ exports.seed = function(knex) {
           name:
             "Sprint Challenge - User Interface and Responsive Web Sprint Challenge",
           date: "2020-03-30",
-          url: "",
+          url: "https://github.com/LambdaSchool/Sprint-Challenge--User-Interface",
           type: "sprint",
           cohort_id: 1
         },
@@ -61,7 +61,7 @@ exports.seed = function(knex) {
           sprint: "Advanced CSS",
           name: "Responsive Design I",
           date: "2020-03-30",
-          url: "",
+          url: "https://learn.lambdaschool.com/web1/module/recuDrqSGpWcepCMs",
           type: "module",
           cohort_id: 1
         },
@@ -71,7 +71,7 @@ exports.seed = function(knex) {
           sprint: "Advanced CSS",
           name: "Responsive Design II",
           date: "2020-03-30",
-          url: "",
+          url: "https://learn.lambdaschool.com/web1/module/recE3IqPtDxaVI0DW",
           type: "module",
           cohort_id: 1
         },
@@ -81,7 +81,7 @@ exports.seed = function(knex) {
           sprint: "Advanced CSS",
           name: "Preprocessing I",
           date: "2020-03-30",
-          url: "",
+          url: "https://learn.lambdaschool.com/web1/module/reculyBhIYkuoBRqh",
           type: "module",
           cohort_id: 1
         },
@@ -91,7 +91,7 @@ exports.seed = function(knex) {
           sprint: "Advanced CSS",
           name: "Preprocessing II",
           date: "2020-03-30",
-          url: "",
+          url: "https://learn.lambdaschool.com/web1/module/rec1hRu3bO6L0uxn2",
           type: "module",
           cohort_id: 1
         },
@@ -101,7 +101,7 @@ exports.seed = function(knex) {
           sprint: "Advanced CSS",
           name: "Sprint Challenge - Advanced CSS Sprint Challenge",
           date: "2020-03-30",
-          url: "",
+          url: "https://github.com/LambdaSchool/Sprint-Challenge--Advanced-CSS",
           type: "sprint",
           cohort_id: 1
         },
@@ -112,7 +112,7 @@ exports.seed = function(knex) {
           sprint: "JavaScript Fundamentals",
           name: "JavaScript I",
           date: "2020-03-30",
-          url: "",
+          url: "https://learn.lambdaschool.com/web1/module/recCT3KJYTIRYwQMh",
           type: "module",
           cohort_id: 1
         },
@@ -122,7 +122,7 @@ exports.seed = function(knex) {
           sprint: "JavaScript Fundamentals",
           name: "JavaScript II",
           date: "2020-03-30",
-          url: "",
+          url: "https://learn.lambdaschool.com/web1/module/rec1oaBmEoSilO2yf",
           type: "module",
           cohort_id: 1
         },
@@ -132,7 +132,7 @@ exports.seed = function(knex) {
           sprint: "JavaScript Fundamentals",
           name: "JavaScript III",
           date: "2020-03-30",
-          url: "",
+          url: "https://learn.lambdaschool.com/web1/module/rec0AWuNLezbpit7m",
           type: "module",
           cohort_id: 1
         },
@@ -142,7 +142,7 @@ exports.seed = function(knex) {
           sprint: "JavaScript Fundamentals",
           name: "JavaScript IV",
           date: "2020-03-30",
-          url: "",
+          url: "https://learn.lambdaschool.com/web1/module/recyS588eOvVUKAMc",
           type: "module",
           cohort_id: 1
         },
@@ -152,7 +152,7 @@ exports.seed = function(knex) {
           sprint: "JavaScript Fundamentals",
           name: "Sprint Challenge - JavaScript Foundations Sprint Challenge",
           date: "2020-03-30",
-          url: "",
+          url: "https://github.com/LambdaSchool/Sprint-Challenge--JavaScript",
           type: "sprint",
           cohort_id: 1
         },
@@ -167,7 +167,7 @@ exports.seed = function(knex) {
           type: "sprint",
           cohort_id: 1
         },
-        //**************Next Unit****************************
+//**********************Next Unit****************************
         //**************Next sprint:
         {
           id: 17,
