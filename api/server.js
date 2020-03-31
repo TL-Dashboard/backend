@@ -4,9 +4,9 @@ const configMiddleware = require('../middleware/config.js');
 const verifyToken = require('../middleware/token.js')
 const verifySession = require('../middleware/session.js');
 const authRouter = require('../auth/auth-router.js');
-const adminsRouter = require('../admins/admins-router.js');
+const adminsRouter = require('../models/admins/admins-router.js');
 const workersRouter = require('../workers/workers-router.js');
-const studentsRouter = require('../students/students-router.js');
+const studentsRouter = require('../models/students/students-router.js');
 
 
 const server = express();

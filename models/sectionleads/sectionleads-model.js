@@ -1,4 +1,4 @@
-const db = require("../database/dbConfig.js");
+const db = require("../../database/dbConfig.js");
 
 module.exports = {
     add,
@@ -10,7 +10,7 @@ module.exports = {
 };
 
 function add(user) {
-    return db("admins")
+    return db("sectionleads")
         .insert(user, "id")
         .then(ids => {
             const [id] = ids;
@@ -19,38 +19,38 @@ function add(user) {
 }
 
 function find() {
-    return db("admins").select("id", "email", "first_name", "last_name", "type");
+    return db("sectionleads").select("id", "email", "first_name", "last_name", "type", "cohort_id");
 }
 
 function findBy(filter) {
-    return db("admins")
-        .select("id", "email", "first_name", "last_name", "type", "password")
+    return db("sectionleads")
+        .select("id", "email", "first_name", "last_name", "type", "password", "cohort_id")
         .where(filter);
 }
 
 function findById(id) {
-    return db("admins")
-        .select("id", "email", "first_name", "last_name", "type")
+    return db("sectionleads")
+        .select("id", "email", "first_name", "last_name", "type", "cohort_id")
         .where({ id })
         .first();
 }
 
 function update(changes, id) {
-    return db('admins')
+    return db('sectionleads')
       .where({ id })
       .update(changes)
-      .select("id", "email", "first_name", "last_name", "type", "password");
+      .select("id", "email", "first_name", "last_name", "type", "password", "cohort_id");
   }
 
 function remove(id) {
-    return db('admins')
+    return db('sectionleads')
       .where('id', id)
       .del();
   }
 
 // function findStudents(id) {
 //     return db('students as st')
-//         .join('admins as a', 'a.id', 'st.admin_id')
+//         .join('sectionleads as a', 'a.id', 'st.admin_id')
 //         .select('st.*')
 //         .where('st.admin_id', id)
 //         .orderBy('st.id');
