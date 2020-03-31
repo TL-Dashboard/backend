@@ -24,7 +24,7 @@ function find() {
 
 function findBy(filter) {
     return db("admins")
-        .select("id", "email", "first_name", "last_name", "type")
+        .select("id", "email", "first_name", "last_name", "type", "password")
         .where(filter);
 }
 
@@ -39,7 +39,7 @@ function update(changes, id) {
     return db('admins')
       .where({ id })
       .update(changes)
-      .select("id", "email", "first_name", "last_name", "type");
+      .select("id", "email", "first_name", "last_name", "type", "password");
   }
 
 function remove(id) {

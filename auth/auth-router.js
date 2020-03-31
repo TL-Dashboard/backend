@@ -56,8 +56,15 @@ router.post('/login', (req, res) => {
         const token = signToken(user);
         req.session.loggedIn = true;
         req.session.email = user.email;
-        console.log('Admin login email:', user.email)
-        const payload = {...user, token: token}
+        console.log('Admin login email:', user.email);
+        const payload = {
+          id: user.id,
+          email: user.email,
+          first_name: user.first_name,
+          last_name: user.last_name,
+          type: user.type,
+          token: token
+        };
         res.status(201).json(payload);
       } else {        
         // If email not found in admins, search workers:
