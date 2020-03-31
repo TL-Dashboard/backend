@@ -1,8 +1,9 @@
 const router = require('express').Router();
 const bcrypt = require('bcryptjs');
 const Admins = require('../models/admins/admins-model.js');
-const SectionLead = require('../models/sectionleads/sectionleads-model.js');
-const TeamLead = require('../models/teamleads/teamleads-model.js');
+const SectionLeads = require('../models/sectionleads/sectionleads-model.js');
+const TeamLeads = require('../models/teamleads/teamleads-model.js');
+const Students = require('../models/students/students-model.js');
 const verifySession = require('../middleware/session.js')
 const signToken = require('../middleware/signToken.js')
 
@@ -27,8 +28,21 @@ router.post('/register', (req, res) => {
         console.log(error)
         res.status(500).json(error);
     });
-  } else if (user.type === 'sectionlead'){
-    SectionLead.add(user)
+  } else if (user.type === 'SL'){
+    SectionLeads.add(user)
+      .then(saved => {
+        const token = signToken(saved);
+        req.session.loggedIn = true;
+        req.session.email = user.email;
+        const payload = {...saved, token: token}
+        res.status(201).json(payload);
+      })
+      .catch(error => {
+        console.log(error)
+        res.status(500).json(error);
+    });
+  } else if (user.type === 'TL'){
+    TeamLeads.add(user)
       .then(saved => {
         const token = signToken(saved);
         req.session.loggedIn = true;
@@ -66,7 +80,7 @@ router.post('/login', (req, res) => {
         res.status(201).json(payload);
       } else {
         // If email not found in admins, search SectionLeads:
-        SectionLead.findBy({email})
+        SectionLeads.findBy({email})
           .first()
           .then(user => {
             if (user && bcrypt.compareSync(password, user.password)) {
@@ -80,13 +94,14 @@ router.post('/login', (req, res) => {
                 first_name: user.first_name,
                 last_name: user.last_name,
                 type: user.type,
+                fifth_day: user.fifth_day,
                 cohort_id: user.cohort_id,
                 token: token
               };
               res.status(201).json(payload);
             } else {
               // If email not found in SLs, search TeamLeads:
-                TeamLead.findBy({email})
+                TeamLeads.findBy({email})
                 .first()
                 .then(user => {
                   if (user && bcrypt.compareSync(password, user.password)) {
@@ -100,20 +115,51 @@ router.post('/login', (req, res) => {
                       first_name: user.first_name,
                       last_name: user.last_name,
                       type: user.type,
+                      fifth_day: user.fifth_day, 
                       cohort_id: user.cohort_id,
                       token: token
                     };
                     res.status(201).json(payload);
-                  } else {     
-                    res.status(401).json({ message: 'Invalid email or password' });
+                  } else {
+                    // If email not found in TLs, search Students:     
+                    Students.findBy({email})
+                    .first()
+                    .then(user => {
+                      if (user && bcrypt.compareSync(password, user.password)) {
+                        const token = signToken(user);
+                        req.session.loggedIn = true;
+                        req.session.email = user.email;
+                        console.log('Student login email:', user.email)
+                        const payload = {
+                          id: user.id,
+                          email: user.email,
+                          first_name: user.first_name,
+                          last_name: user.last_name,
+                          type: user.type,
+                          fifth_day: user.fifth_day, 
+                          cohort_id: user.cohort_id,
+                          teamlead_id: user.teamlead_id,
+                          fifth_day_tl_id: user.fifth_day_tl_id,
+                          token: token
+                        };
+                        res.status(201).json(payload);
+                      } else {     
+                        res.status(401).json({ message: 'Invalid email or password' });
+                      }
+                    })
+                    .catch(error => {
+                      console.log(error)
+                      res.status(500).json(error);
+                  });  
                   }
+                  // students else block end
                 })
                 .catch(error => {
                   console.log(error)
                   res.status(500).json(error);
               });            
-              // teamlead
             }
+            // teamlead else block end
           })
           .catch(error => {
             console.log(error)

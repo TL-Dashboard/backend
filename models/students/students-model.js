@@ -7,10 +7,6 @@ module.exports = {
     findById,
     update,
     remove,
-    findPic,
-    findPics,
-    addProfilePic,
-    updateProfilePic
 };
 
 function add(user) {
@@ -50,26 +46,3 @@ function remove(id) {
       .where('id', id)
       .del();
   }
-
-function findPic(id) {
-    return db('students')
-        .select("id", "img_url")
-        .where({ id });
-}
-
-function findPics() {
-    return db('students')
-        .select("id", "img_url")
-}
-
-function addProfilePic(image) {
-    return db('students')
-        .insert(image, 'id');
-}
-
-function updateProfilePic(changes, id) {
-    return db('students')
-        .where({ id })
-        .update(changes)
-        .then(count => findById(id));
-}
