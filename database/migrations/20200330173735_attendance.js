@@ -1,5 +1,5 @@
 exports.up = function(knex) {
-    return knex.schema.createTable("students", tbl => {
+    return knex.schema.createTable("attendance", tbl => {
       tbl.increments();
       tbl.datetime("date", 255).notNullable();
       tbl.string("time",255).notNullable();
@@ -14,16 +14,16 @@ exports.up = function(knex) {
         .onDelete("RESTRICT")
         .onUpdate("CASCADE");
       tbl
-        .integer("teamlead_id")
+        .integer("assignment_id")
         .unsigned()
         .notNullable()
         .references("id")
-        .inTable("teamleads")
+        .inTable("assignments")
         .onDelete("RESTRICT")
         .onUpdate("CASCADE");
     });
   };
   
   exports.down = function(knex, Promise) {
-    return knex.schema.dropTableIfExists("students");
+    return knex.schema.dropTableIfExists("attendance");
   };

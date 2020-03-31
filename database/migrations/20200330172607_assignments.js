@@ -1,5 +1,5 @@
 exports.up = function(knex) {
-  return knex.schema.createTable("students", tbl => {
+  return knex.schema.createTable("assignments", tbl => {
     tbl.increments();
     tbl.string("unit", 255).notNullable();
     tbl.string("sprint", 255).notNullable();
@@ -19,5 +19,5 @@ exports.up = function(knex) {
 };
 
 exports.down = function(knex, Promise) {
-  return knex.schema.dropTableIfExists("students");
+  return knex.schema.dropTableIfExists("assignments");
 };
