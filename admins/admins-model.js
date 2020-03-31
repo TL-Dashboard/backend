@@ -7,9 +7,8 @@ module.exports = {
     findById,
     update,
     remove,
-    findStudents,
-    addStudent
 };
+
 function add(user) {
     return db("admins")
         .insert(user, "id")
@@ -18,19 +17,20 @@ function add(user) {
             return findById(id);
         });
 }
+
 function find() {
-    return db("admins").select("id", "first_name", "last_name", "email", "phone", "organization", "type");
+    return db("admins").select("id", "email", "first_name", "last_name", "type");
 }
 
 function findBy(filter) {
     return db("admins")
-        .select("id", "first_name", "last_name", "email", "phone", "organization", "password",  "type")
+        .select("id", "email", "first_name", "last_name", "type")
         .where(filter);
 }
 
 function findById(id) {
     return db("admins")
-        .select("id", "first_name", "last_name", "email", "phone", "organization",  "type")
+        .select("id", "email", "first_name", "last_name", "type")
         .where({ id })
         .first();
 }
@@ -39,7 +39,7 @@ function update(changes, id) {
     return db('admins')
       .where({ id })
       .update(changes)
-      .select("id", "first_name", "last_name", "email", "phone", "organization");
+      .select("id", "email", "first_name", "last_name", "type");
   }
 
 function remove(id) {
@@ -48,18 +48,18 @@ function remove(id) {
       .del();
   }
 
-function findStudents(id) {
-    return db('students as st')
-        .join('admins as a', 'a.id', 'st.admin_id')
-        .select('st.*')
-        .where('st.admin_id', id)
-        .orderBy('st.id');
-}
+// function findStudents(id) {
+//     return db('students as st')
+//         .join('admins as a', 'a.id', 'st.admin_id')
+//         .select('st.*')
+//         .where('st.admin_id', id)
+//         .orderBy('st.id');
+// }
 
-function addStudent(studentData, id) {
-    const newStudent = {...studentData, admin_id: id}
-    return db('students')
-        .insert(newStudent)
-        .then(() => {
-            return findStudents(id)});
-}
+// function addStudent(studentData, id) {
+//     const newStudent = {...studentData, admin_id: id}
+//     return db('students')
+//         .insert(newStudent)
+//         .then(() => {
+//             return findStudents(id)});
+// }
