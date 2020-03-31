@@ -13,7 +13,7 @@ exports.up = function(knex) {
       .notNullable()
       .references("id")
       .inTable("cohorts")
-      .onDelete("RESTRICT")
+      .onDelete("CASCADE")
       .onUpdate("CASCADE");
   });
 };

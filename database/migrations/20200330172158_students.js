@@ -16,7 +16,7 @@ exports.up = function(knex) {
         .notNullable()
         .references("id")
         .inTable("cohorts")
-        .onDelete("RESTRICT")
+        .onDelete("CASCADE")
         .onUpdate("CASCADE");
       tbl
         .integer("teamlead_id")
@@ -24,7 +24,7 @@ exports.up = function(knex) {
         .notNullable()
         .references("id")
         .inTable("teamleads")
-        .onDelete("RESTRICT")
+        .onDelete("CASCADE")
         .onUpdate("CASCADE");
       tbl
         .integer("fifth_day_tl_id")
@@ -32,7 +32,7 @@ exports.up = function(knex) {
         .notNullable()
         .references("id")
         .inTable("teamleads")
-        .onDelete("RESTRICT")
+        .onDelete("CASCADE")
         .onUpdate("CASCADE");
     });
   };

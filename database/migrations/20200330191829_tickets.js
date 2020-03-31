@@ -11,7 +11,7 @@ exports.up = function(knex) {
       .notNullable()
       .references("id")
       .inTable("sectionleads")
-      .onDelete("RESTRICT")
+      .onDelete("CASCADE")
       .onUpdate("CASCADE");
     tbl
       .integer("teamlead_id")
@@ -19,7 +19,7 @@ exports.up = function(knex) {
       .notNullable()
       .references("id")
       .inTable("teamleads")
-      .onDelete("RESTRICT")
+      .onDelete("CASCADE")
       .onUpdate("CASCADE");
     tbl
       .integer("student_id")
@@ -27,7 +27,7 @@ exports.up = function(knex) {
       .notNullable()
       .references("id")
       .inTable("students")
-      .onDelete("RESTRICT")
+      .onDelete("CASCADE")
       .onUpdate("CASCADE");
   });
 };

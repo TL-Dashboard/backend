@@ -1,3 +1,4 @@
+const bcrypt = require('bcryptjs');
 
 exports.seed = function(knex) {
   return knex('students').truncate()
@@ -97,7 +98,7 @@ exports.seed = function(knex) {
           password: bcrypt.hashSync('testtest', 10),
           cohort_id: 1,
           teamlead_id: 2,
-          fifth_day_tl_id: 1
+          fifth_day_tl_id: 3
         },
         {
           id: 9,
