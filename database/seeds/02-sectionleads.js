@@ -11,6 +11,7 @@ exports.seed = function(knex) {
           last_name: 'Hart',
           type: 'SL',
           password: bcrypt.hashSync('testtest', 10),
+          fifth_day: null,
           cohort_id: 1,
         },
         {
@@ -19,6 +20,7 @@ exports.seed = function(knex) {
           first_name: 'Shannon',
           last_name: 'Reed',
           type: 'SL',
+          fifth_day: null,
           password: bcrypt.hashSync('testtest', 10),
           cohort_id: 1,
         },
@@ -28,6 +30,7 @@ exports.seed = function(knex) {
           first_name: 'Jill',
           last_name: 'Jackson',
           type: 'SL',
+          fifth_day: null,
           password: bcrypt.hashSync('testtest', 10),
           cohort_id: 2,
         },
