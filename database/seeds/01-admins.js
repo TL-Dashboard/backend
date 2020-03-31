@@ -6,34 +6,28 @@ exports.seed = function(knex) {
       return knex('admins').insert([
         {
           id: 1,
+          email: 'test@test.com',
           first_name: 'Testy',
           last_name: 'McTesterson',
-          email: 'test@test.com',
-          password: bcrypt.hashSync('testtest', 10),
-          phone: '555-555-1234',
-          organization: 'International School',
-          type: 'admin'
-      },
-      {
+          type: 'admin',
+          password: bcrypt.hashSync('testtest', 10)
+        },
+        {
           id: 2,
-          first_name: 'Brittani',
-          last_name: 'Luce',
-          email: 'c0der.br1t@gmail.com',
-          password: bcrypt.hashSync('testtest', 10),
-          phone: '913-701-4016',
-          organization: 'Lambda School',
-          type: 'admin'
-      },
-      {
+          email: 'admin@test.com',
+          first_name: 'Lambda',
+          last_name: 'Admin',
+          type: 'admin',
+          password: bcrypt.hashSync('testtest', 10)
+        },
+        {
           id: 3,
-          first_name: 'Brittani',
-          last_name: 'Divine',
-          email: 'xynova.333@gmail.com',
-          password: bcrypt.hashSync('testtest', 10),
-          phone: '913-701-4016',
-          organization: 'Lambda School',
-          type: 'admin'
-      }
+          email: 'neo@matrix.com',
+          first_name: 'Neo',
+          last_name: 'Anderson',
+          type: 'admin',
+          password: bcrypt.hashSync('testtest', 10)
+        },
       ]);
     });
 };
