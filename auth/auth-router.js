@@ -2,6 +2,7 @@ const router = require('express').Router();
 const bcrypt = require('bcryptjs');
 const Admins = require('../models/admins/admins-model.js');
 const SectionLead = require('../models/sectionleads/sectionleads-model.js');
+const TeamLead = require('../models/teamleads/teamleads-model.js');
 const verifySession = require('../middleware/session.js')
 const signToken = require('../middleware/signToken.js')
 
@@ -63,8 +64,8 @@ router.post('/login', (req, res) => {
           token: token
         };
         res.status(201).json(payload);
-      } else {        
-        // If email not found in admins, search SectionLead:
+      } else {
+        // If email not found in admins, search SectionLeads:
         SectionLead.findBy({email})
           .first()
           .then(user => {
@@ -83,8 +84,35 @@ router.post('/login', (req, res) => {
                 token: token
               };
               res.status(201).json(payload);
-            } else {        
-              res.status(401).json({ message: 'Invalid email or password' });
+            } else {
+              // If email not found in SLs, search TeamLeads:
+                TeamLead.findBy({email})
+                .first()
+                .then(user => {
+                  if (user && bcrypt.compareSync(password, user.password)) {
+                    const token = signToken(user);
+                    req.session.loggedIn = true;
+                    req.session.email = user.email;
+                    console.log('TL login email:', user.email)
+                    const payload = {
+                      id: user.id,
+                      email: user.email,
+                      first_name: user.first_name,
+                      last_name: user.last_name,
+                      type: user.type,
+                      cohort_id: user.cohort_id,
+                      token: token
+                    };
+                    res.status(201).json(payload);
+                  } else {     
+                    res.status(401).json({ message: 'Invalid email or password' });
+                  }
+                })
+                .catch(error => {
+                  console.log(error)
+                  res.status(500).json(error);
+              });            
+              // teamlead
             }
           })
           .catch(error => {
