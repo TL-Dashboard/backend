@@ -8,6 +8,7 @@ exports.up = function(knex) {
       tbl.string("first_name", 255).notNullable();
       tbl.string("last_name", 255).notNullable();
       tbl.string("type", 255).notNullable();
+      tbl.string('fifth_day', 255);
       tbl.string("password", 255).notNullable();
       tbl
         .integer("cohort_id")

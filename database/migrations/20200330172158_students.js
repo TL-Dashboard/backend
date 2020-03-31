@@ -8,6 +8,7 @@ exports.up = function(knex) {
       tbl.string("first_name", 255).notNullable();
       tbl.string("last_name", 255).notNullable();
       tbl.string("type", 255).notNullable();
+      tbl.string('fifth_day', 255);
       tbl.string("password", 255).notNullable();
       tbl
         .integer("cohort_id")
@@ -19,6 +20,14 @@ exports.up = function(knex) {
         .onUpdate("CASCADE");
       tbl
         .integer("teamlead_id")
+        .unsigned()
+        .notNullable()
+        .references("id")
+        .inTable("teamleads")
+        .onDelete("RESTRICT")
+        .onUpdate("CASCADE");
+      tbl
+        .integer("fifth_day_tl_id")
         .unsigned()
         .notNullable()
         .references("id")
