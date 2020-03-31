@@ -1,8 +1,8 @@
 exports.seed = function(knex) {
-  return knex("attendance")
+  return knex("grades")
     .truncate()
     .then(function() {
-      return knex("attendance").insert([
+      return knex("grades").insert([
         {
           id: 1,
           date: "2020-03-30",
