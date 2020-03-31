@@ -434,6 +434,114 @@ exports.seed = function(knex) {
           student_id: 12,
           assignment_id: 4
         },
+        {
+          id: 49,
+          date: '2020-04-03',
+          time: 'Stand-up',
+          present: 'true',
+          notes: '',
+          student_id: 1,
+          assignment_id: 5 
+        },
+        {
+          id: 50,
+          date: '2020-04-03',
+          time: 'Stand-up',
+          present: 'true',
+          notes: '',
+          student_id: 2,
+          assignment_id: 5 
+        },
+        {
+          id: 51,
+          date: '2020-04-03',
+          time: 'Stand-up',
+          present: 'false',
+          notes: '',
+          student_id: 3,
+          assignment_id: 5 
+        },
+        {
+          id: 52,
+          date: '2020-04-03',
+          time: 'Stand-up',
+          present: 'false',
+          notes: '',
+          student_id: 4,
+          assignment_id: 5 
+        },
+        {
+          id: 53,
+          date: '2020-04-03',
+          time: 'Stand-up',
+          present: 'true',
+          notes: '',
+          student_id: 5,
+          assignment_id: 5 
+        },
+        {
+          id: 54,
+          date: '2020-04-03',
+          time: 'Stand-up',
+          present: 'true',
+          notes: '',
+          student_id: 6,
+          assignment_id: 5 
+        },
+        {
+          id: 55,
+          date: '2020-04-03',
+          time: 'Stand-up',
+          present: 'true',
+          notes: '',
+          student_id: 7,
+          assignment_id: 5 
+        },
+        {
+          id: 56,
+          date: '2020-04-03',
+          time: 'Stand-up',
+          present: 'true',
+          notes: '',
+          student_id: 8,
+          assignment_id: 5 
+        },
+        {
+          id: 57,
+          date: '2020-04-03',
+          time: 'Stand-up',
+          present: 'true',
+          notes: '',
+          student_id: 9,
+          assignment_id: 5 
+        },
+        {
+          id: 58,
+          date: '2020-04-03',
+          time: 'Stand-up',
+          present: 'true',
+          notes: '',
+          student_id: 10,
+          assignment_id: 5 
+        },
+        {
+          id: 59,
+          date: '2020-04-03',
+          time: 'Stand-up',
+          present: 'true',
+          notes: '',
+          student_id: 11,
+          assignment_id: 5
+        },
+        {
+          id: 60,
+          date: '2020-04-03',
+          time: 'Stand-up',
+          present: 'true',
+          notes: '',
+          student_id: 12,
+          assignment_id: 5
+        },
       ]);
     });
 };
