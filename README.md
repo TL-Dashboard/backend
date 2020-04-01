@@ -152,17 +152,19 @@ Response Body:
  ### Delete Record By Id
  DEL to ``` /*record*/${id} ``` where record is table name
 
- Response Body (grades):
+ Response Body (tickets):
  ```
  [
     {
-        "id": 1,
-        "date": "2020-03-30",
-        "grade": 2,
-        "notes": "",
-        "student_id": 1,
-        "assignment_id": 1,
-        "teamlead_id": 1
+        "id": integer,
+        "posted_by": "Robert Gordon",
+        "type": "Other",
+        "date": "2020-04-01",
+        "description": "When can Lambda begin using this new dashboard?",
+        "status": "In Progress",
+        "sectionlead_id": 1, (nullable)
+        "teamlead_id": 1, (nullable)
+        "student_id": null (nullable)
     },
     {
         ... rest of records
