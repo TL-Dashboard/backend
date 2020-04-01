@@ -1,12 +1,12 @@
 const router = require('express').Router();
 
-const Attendance = require('./attendance-model.js');
+const Grades = require('./grades-model.js');
 
 router.get('/', (req, res) => {
   console.log('getting records')
-  Attendance.find()
-    .then(users => {
-      res.status(200).json(users);
+  Grades.find()
+    .then(records => {
+      res.status(200).json(records);
     })
     .catch(err => {
       res.status(404).json(err);
@@ -16,7 +16,7 @@ router.get('/', (req, res) => {
 router.get('/:id', (req, res) => {
   const { id } = req.params;
   // console.log(id)
-  Attendance.findById(id)
+  Grades.findById(id)
   .then(record => {
     if (record) {
       res.json(record);
@@ -30,7 +30,7 @@ router.get('/:id', (req, res) => {
 });
 
 router.get('/query/:filter', (req, res) => {
-  Attendance.findBy(req.query)
+  Grades.findBy(req.query)
   .then(record => {
     if (record) {
       res.json(record);
@@ -45,7 +45,7 @@ router.get('/query/:filter', (req, res) => {
 
 router.post('/', (req, res) => {
   const record = req.body;
-  Attendance.add(record)
+  Grades.add(record)
   .then(rec => {
     res.status(201).json(rec);
   })
@@ -58,10 +58,10 @@ router.put('/:id', (req, res) => {
   const { id } = req.params;
   const changes = req.body;
 
-  Attendance.findById(id)
+  Grades.findById(id)
   .then(record => {
     if (record) {
-      Attendance.update(changes, id)
+      Grades.update(changes, id)
       .then(() => {
         res.status(201).json({ message: `Record ${id} successfully updated`});
       });
@@ -77,7 +77,7 @@ router.put('/:id', (req, res) => {
 router.delete('/:id', (req, res) => {
   const { id } = req.params;
 
-  Attendance.remove(id)
+  Grades.remove(id)
   .then(deleted => {
     if (deleted) {
       res.status(201).json({ message: `Record ${id} successfully deleted` });

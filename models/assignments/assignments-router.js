@@ -1,10 +1,10 @@
 const router = require('express').Router();
 
-const Assingments = require('./assignments-model.js');
+const Assignments = require('./assignments-model.js');
 
 router.get('/', (req, res) => {
   console.log('getting records')
-  Assingments.find()
+  Assignments.find()
     .then(users => {
       res.status(200).json(users);
     })
@@ -16,7 +16,7 @@ router.get('/', (req, res) => {
 router.get('/:id', (req, res) => {
   const { id } = req.params;
   // console.log(id)
-  Assingments.findById(id)
+  Assignments.findById(id)
   .then(record => {
     if (record) {
       res.json(record);
@@ -30,7 +30,7 @@ router.get('/:id', (req, res) => {
 });
 
 router.get('/query/:filter', (req, res) => {
-  Assingments.findBy(req.query)
+  Assignments.findBy(req.query)
   .then(record => {
     if (record) {
       res.json(record);
@@ -45,7 +45,7 @@ router.get('/query/:filter', (req, res) => {
 
 router.post('/', (req, res) => {
   const record = req.body;
-  Assingments.add(record)
+  Assignments.add(record)
   .then(rec => {
     res.status(201).json(rec);
   })
@@ -58,12 +58,12 @@ router.put('/:id', (req, res) => {
   const { id } = req.params;
   const changes = req.body;
 
-  Assingments.findById(id)
+  Assignments.findById(id)
   .then(record => {
     if (record) {
-      Assingments.update(changes, id)
+      Assignments.update(changes, id)
       .then(() => {
-        res.status(201).json({ message: `record ${id} successfully updated`});
+        res.status(201).json({ message: `Record ${id} successfully updated`});
       });
     } else {
       res.status(404).json({ message: `Could not find record ${id}` });
@@ -77,10 +77,10 @@ router.put('/:id', (req, res) => {
 router.delete('/:id', (req, res) => {
   const { id } = req.params;
 
-  Assingments.remove(id)
+  Assignments.remove(id)
   .then(deleted => {
     if (deleted) {
-      res.status(201).json({ message: `record ${id} successfully deleted` });
+      res.status(201).json({ message: `Record ${id} successfully deleted` });
     } else {
       res.status(404).json({ message: 'Could not find record with given id' });
     }

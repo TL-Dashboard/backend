@@ -10,6 +10,7 @@ const teamleadsRouter = require('../models/teamleads/teamleads-router.js');
 const studentsRouter = require('../models/students/students-router.js');
 const assignmentsRouter = require('../models/assignments/assignments-router.js');
 const attendanceRouter = require('../models/attendance/attendance-router.js');
+const gradesRouter = require('../models/grades/grades-router.js');
 
 
 const server = express();
@@ -23,6 +24,7 @@ server.use('/api/teamleads', verifyToken, teamleadsRouter);
 server.use('/api/students', verifyToken, studentsRouter);
 server.use('/api/assignments', verifyToken, assignmentsRouter);
 server.use('/api/attendance', verifyToken, attendanceRouter);
+server.use('/api/grades', verifyToken, gradesRouter);
 
 server.get('/', (req, res) => {
   res.send(`<h2>Server is online!</h2><br><div>Visit: <a href='https://github.com/build-international-school/Back-End'>https://github.com/build-international-school/Back-End</a> for more API info.</div>`)
