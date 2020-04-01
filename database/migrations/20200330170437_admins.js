@@ -4,6 +4,7 @@ exports.up = function(knex) {
     Admins.string("email", 255).notNullable().unique();
     Admins.string("first_name", 255).notNullable();
     Admins.string("last_name", 255).notNullable();
+    Admins.string("img_url", 1024);
     Admins.string("type", 255).notNullable();
     Admins.string("password", 255).notNullable();
   });

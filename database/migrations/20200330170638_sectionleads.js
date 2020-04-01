@@ -7,6 +7,7 @@ exports.up = function(knex) {
       .unique();
     tbl.string("first_name", 255).notNullable();
     tbl.string("last_name", 255).notNullable();
+    tbl.string("img_url", 1024);
     tbl.string("type", 255).notNullable();
     tbl.string('fifth_day', 255);
     tbl.string("password", 255).notNullable();
