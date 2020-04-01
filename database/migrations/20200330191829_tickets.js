@@ -1,6 +1,7 @@
 exports.up = function(knex) {
   return knex.schema.createTable("tickets", tbl => {
     tbl.increments();
+    tbl.string("posted_by", 255).notNullable();
     tbl.string("type", 255).notNullable();
     tbl.datetime("date", 255).notNullable();
     tbl.text("description", 1024);
@@ -8,7 +9,6 @@ exports.up = function(knex) {
     tbl
       .integer("sectionlead_id")
       .unsigned()
-      .notNullable()
       .references("id")
       .inTable("sectionleads")
       .onDelete("CASCADE")
@@ -16,7 +16,6 @@ exports.up = function(knex) {
     tbl
       .integer("teamlead_id")
       .unsigned()
-      .notNullable()
       .references("id")
       .inTable("teamleads")
       .onDelete("CASCADE")
@@ -24,7 +23,6 @@ exports.up = function(knex) {
     tbl
       .integer("student_id")
       .unsigned()
-      .notNullable()
       .references("id")
       .inTable("students")
       .onDelete("CASCADE")
