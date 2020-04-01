@@ -124,4 +124,25 @@ router.get("/:id/studentdata", async (req, res) => {
   }
 });
 
+router.get("/:id/studentdata-5thday", async (req, res) => {
+  const { id } = req.params;
+  try {
+    const students = await TeamLeads.find5thDayStudents(id);
+    const grades = await getData(students, Students.findGrades);
+    const retros = await getData(students, Students.findRetros);
+    const attendance = await getData(students, Students.findAttendance);
+    const data = students.map((student, index) => {
+      return {
+        ...student,
+        attendance: attendance[index],
+        grades: grades[index],
+        retros: retros[index]
+      };
+    });
+    res.json(data);
+  } catch (err) {
+    res.status(500).json({ message: "Failed to get Student Data", err });
+  }
+});
+
 module.exports = router;

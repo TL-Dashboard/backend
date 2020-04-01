@@ -7,7 +7,8 @@ module.exports = {
   findById,
   update,
   remove,
-  findStudents
+  findStudents,
+  find5thDayStudents
 };
 
 function add(user) {
@@ -82,6 +83,24 @@ function findStudents(id) {
     .where("st.teamlead_id", id)
     .orderBy("st.id");
 }
+
+function find5thDayStudents(id) {
+    return db("students as st")
+      .join("teamleads as tl", "tl.id", "st.fifth_day_tl_id")
+      .select(
+        "st.id",
+        "st.email",
+        "st.first_name",
+        "st.last_name",
+        "st.type",
+        "st.fifth_day",
+        "st.cohort_id",
+        "st.teamlead_id",
+        "st.fifth_day_tl_id"
+      )
+      .where("st.fifth_day_tl_id", id)
+      .orderBy("st.id");
+  }
 
 // function findStudents(id) {
 //     return db('students as st')
