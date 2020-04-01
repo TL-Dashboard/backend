@@ -1,6 +1,7 @@
 const router = require('express').Router();
 
 const TeamLeads = require('./teamleads-model.js');
+const Students = require('../students/students-model.js')
 
 router.get('/', (req, res) => {
   TeamLeads.find()
@@ -64,40 +65,48 @@ router.delete('/:id', (req, res) => {
   });
 });
 
+router.get('/:id/students', (req, res) => {
+  const { id } = req.params;
+  TeamLeads.findStudents(id)
+  .then(students => {
+    if (students.length) {
+      res.json(students);
+    } else {
+      res.status(404).json({ message: `Could not find students for teamlead: ${id}` })
+    }
+  })
+  .catch(err => {
+    res.status(500).json({ message: 'Failed to get steps' });
+  });
+});
+
+//async functions getData & useDbMethod resolve multiple promises
+const useDbMethod = async (getId, dbMethod) => {
+  return await dbMethod(getId)
+}
+
+const getData = async (array, dbMethod) => {
+  const newArray = array.map(async student => {
+    return await useDbMethod(student.id, dbMethod)
+  })
+  return Promise.all(newArray)
+}
+
+router.get('/:id/studentdata', async (req, res) => {
+  const { id } = req.params;
+  try {
+    const students = await TeamLeads.findStudents(id);
+    const grades = await getData(students, Students.findGrades);
+    const retros = await getData(students, Students.findRetros);
+    const attendance = await getData(students, Students.findAttendance);
+    const data = students.map((student, index) =>{
+      return {...student, attendance: attendance[index], grades: grades[index], retros: retros[index]}
+    })
+    res.json(data)
+  } catch (err) {
+    res.status(500).json({ message: 'Failed to get Student Data', err });
+  }
+});
+
+
 module.exports = router;
-
-// router.get('/:id/students', (req, res) => {
-//   const { id } = req.params;
-//   TeamLeads.findStudents(id)
-//   .then(steps => {
-//     if (steps.length) {
-//       res.json(steps);
-//     } else {
-//       res.status(404).json({ message: `Could not find students for teamlead: ${id}` })
-//     }
-//   })
-//   .catch(err => {
-//     res.status(500).json({ message: 'Failed to get steps' });
-//   });
-// });
-
-
-// router.post('/:id/students', (req, res) => {
-//   const studentData = req.body;
-//   const { id } = req.params; 
-
-//   TeamLeads.findById(id)
-//   .then(teamlead => {
-//     if (teamlead) {
-//       TeamLeads.addStudent(studentData, id)
-//       .then(student => {
-//         res.status(201).json(student);
-//       })
-//     } else {
-//       res.status(404).json({ message: 'Could not find teamlead with given id.' })
-//     }
-//   })
-//   .catch (err => {
-//     res.status(500).json({ message: 'Failed to create new step' });
-//   });
-// });

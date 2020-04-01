@@ -5,7 +5,8 @@ const verifyToken = require('../middleware/token.js')
 const verifySession = require('../middleware/session.js');
 const authRouter = require('../auth/auth-router.js');
 const adminsRouter = require('../models/admins/admins-router.js');
-const workersRouter = require('../workers/workers-router.js');
+const sectionleadsRouter = require('../models/sectionleads/sectionleads-router.js');
+const teamleadsRouter = require('../models/teamleads/teamleads-router.js');
 const studentsRouter = require('../models/students/students-router.js');
 
 
@@ -15,7 +16,8 @@ configMiddleware(server);
 
 server.use('/api/auth', authRouter);
 server.use('/api/admins', verifyToken, adminsRouter);
-server.use('/api/workers', verifyToken, workersRouter);
+server.use('/api/sectionleads', verifyToken, sectionleadsRouter);
+server.use('/api/teamleads', verifyToken, teamleadsRouter);
 server.use('/api/students', verifyToken, studentsRouter);
 
 server.get('/', (req, res) => {
