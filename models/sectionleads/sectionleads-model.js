@@ -24,8 +24,8 @@ function find() {
 
 function findBy(filter) {
     return db("sectionleads")
-        .select("id", "email", "first_name", "last_name", "type", "password", "cohort_id")
-        .where(filter);
+        .where(filter)
+        .orderBy('id', 'desc');
 }
 
 function findById(id) {

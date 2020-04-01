@@ -65,39 +65,3 @@ router.delete('/:id', (req, res) => {
 });
 
 module.exports = router;
-
-// router.get('/:id/students', (req, res) => {
-//   const { id } = req.params;
-//   Admins.findStudents(id)
-//   .then(steps => {
-//     if (steps.length) {
-//       res.json(steps);
-//     } else {
-//       res.status(404).json({ message: `Could not find students for admin: ${id}` })
-//     }
-//   })
-//   .catch(err => {
-//     res.status(500).json({ message: 'Failed to get steps' });
-//   });
-// });
-
-
-// router.post('/:id/students', (req, res) => {
-//   const studentData = req.body;
-//   const { id } = req.params; 
-
-//   Admins.findById(id)
-//   .then(admin => {
-//     if (admin) {
-//       Admins.addStudent(studentData, id)
-//       .then(student => {
-//         res.status(201).json(student);
-//       })
-//     } else {
-//       res.status(404).json({ message: 'Could not find admin with given id.' })
-//     }
-//   })
-//   .catch (err => {
-//     res.status(500).json({ message: 'Failed to create new step' });
-//   });
-// });

@@ -26,8 +26,8 @@ function find() {
 
 function findBy(filter) {
     return db("students")
-        .select("*")
-        .where(filter);
+        .where(filter)
+        .orderBy('id', 'desc');
 }
 
 function findById(id) {
