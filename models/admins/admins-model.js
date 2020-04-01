@@ -19,7 +19,7 @@ function add(user) {
 }
 
 function find() {
-  return db("admins").select("id", "email", "first_name", "last_name", "type");
+  return db("admins").select("id", "email", "first_name", "last_name", "img_url", "type");
 }
 
 function findBy(filter) {
@@ -30,7 +30,7 @@ function findBy(filter) {
 
 function findById(id) {
   return db("admins")
-    .select("id", "email", "first_name", "last_name", "type")
+    .select("id", "email", "first_name", "last_name", "img_url", "type")
     .where({ id })
     .first();
 }
@@ -39,7 +39,7 @@ function update(changes, id) {
   return db("admins")
     .where({ id })
     .update(changes)
-    .select("id", "email", "first_name", "last_name", "type", "password");
+    .select("id", "email", "first_name", "last_name", "img_url", "type", "password");
 }
 
 function remove(id) {

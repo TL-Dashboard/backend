@@ -41,7 +41,7 @@ router.put("/:id", (req, res) => {
         TeamLeads.update(changes, id).then(() => {
           res
             .status(201)
-            .json({ message: `teamlead ${id} successfully updated` });
+            .json({ message: `Teamlead ${id} successfully updated` });
         });
       } else {
         res
@@ -62,7 +62,7 @@ router.delete("/:id", (req, res) => {
       if (deleted) {
         res
           .status(201)
-          .json({ message: `teamlead ${id} successfully deleted` });
+          .json({ message: `Teamlead ${id} successfully deleted` });
       } else {
         res
           .status(404)
