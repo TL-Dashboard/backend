@@ -41,7 +41,7 @@ exports.seed = function(knex) {
             posted_by: "Robert Gordon",
             type: 'Grades',
             date: '2020-04-01',
-            description: 'Students has recieved a 1 on last sprint',
+            description: 'Student has recieved a 1 on last sprint',
             status: 'In Progress',
             sectionlead_id: 1,
             teamlead_id: 1,
