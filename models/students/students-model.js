@@ -41,7 +41,7 @@ function update(changes, id) {
     return db('students')
       .where({ id })
       .update(changes)
-      .select("id", "first_name", "last_name", "email", "phone", "organization");
+      .select("*");
   }
 
 function remove(id) {
