@@ -5,7 +5,7 @@ exports.seed = function(knex) {
         {
           id: 1,
           date: '2020-03-30',
-          time: 'Stand-up',
+          time_slot: 'Stand-up',
           present: 'true',
           notes: '',
           student_id: 1,
@@ -14,7 +14,7 @@ exports.seed = function(knex) {
         {
           id: 2,
           date: '2020-03-30',
-          time: 'Stand-up',
+          time_slot: 'Stand-up',
           present: 'true',
           notes: '',
           student_id: 2,
@@ -23,7 +23,7 @@ exports.seed = function(knex) {
         {
           id: 3,
           date: '2020-03-30',
-          time: 'Stand-up',
+          time_slot: 'Stand-up',
           present: 'true',
           notes: '',
           student_id: 3,
@@ -32,7 +32,7 @@ exports.seed = function(knex) {
         {
           id: 4,
           date: '2020-03-30',
-          time: 'Stand-up',
+          time_slot: 'Stand-up',
           present: 'true',
           notes: '',
           student_id: 4,
@@ -41,7 +41,7 @@ exports.seed = function(knex) {
         {
           id: 5,
           date: '2020-03-30',
-          time: 'Stand-up',
+          time_slot: 'Stand-up',
           present: 'true',
           notes: '',
           student_id: 5,
@@ -50,7 +50,7 @@ exports.seed = function(knex) {
         {
           id: 6,
           date: '2020-03-30',
-          time: 'Stand-up',
+          time_slot: 'Stand-up',
           present: 'true',
           notes: '',
           student_id: 6,
@@ -59,7 +59,7 @@ exports.seed = function(knex) {
         {
           id: 7,
           date: '2020-03-30',
-          time: 'Stand-up',
+          time_slot: 'Stand-up',
           present: 'true',
           notes: '',
           student_id: 7,
@@ -68,7 +68,7 @@ exports.seed = function(knex) {
         {
           id: 8,
           date: '2020-03-30',
-          time: 'Stand-up',
+          time_slot: 'Stand-up',
           present: 'true',
           notes: '',
           student_id: 8,
@@ -77,7 +77,7 @@ exports.seed = function(knex) {
         {
           id: 9,
           date: '2020-03-30',
-          time: 'Stand-up',
+          time_slot: 'Stand-up',
           present: 'true',
           notes: '',
           student_id: 9,
@@ -86,7 +86,7 @@ exports.seed = function(knex) {
         {
           id: 10,
           date: '2020-03-30',
-          time: 'Stand-up',
+          time_slot: 'Stand-up',
           present: 'true',
           notes: '',
           student_id: 10,
@@ -95,7 +95,7 @@ exports.seed = function(knex) {
         {
           id: 11,
           date: '2020-03-30',
-          time: 'Stand-up',
+          time_slot: 'Stand-up',
           present: 'true',
           notes: '',
           student_id: 11,
@@ -104,7 +104,7 @@ exports.seed = function(knex) {
         {
           id: 12,
           date: '2020-03-30',
-          time: 'Stand-up',
+          time_slot: 'Stand-up',
           present: 'true',
           notes: '',
           student_id: 12,
@@ -113,7 +113,7 @@ exports.seed = function(knex) {
         {
           id: 13,
           date: '2020-03-31',
-          time: 'Stand-up',
+          time_slot: 'Stand-up',
           present: 'true',
           notes: '',
           student_id: 1,
@@ -122,7 +122,7 @@ exports.seed = function(knex) {
         {
           id: 14,
           date: '2020-03-31',
-          time: 'Stand-up',
+          time_slot: 'Stand-up',
           present: 'true',
           notes: '',
           student_id: 2,
@@ -131,7 +131,7 @@ exports.seed = function(knex) {
         {
           id: 15,
           date: '2020-03-31',
-          time: 'Stand-up',
+          time_slot: 'Stand-up',
           present: 'false',
           notes: '',
           student_id: 3,
@@ -140,7 +140,7 @@ exports.seed = function(knex) {
         {
           id: 16,
           date: '2020-03-31',
-          time: 'Stand-up',
+          time_slot: 'Stand-up',
           present: 'true',
           notes: '',
           student_id: 4,
@@ -149,7 +149,7 @@ exports.seed = function(knex) {
         {
           id: 17,
           date: '2020-03-31',
-          time: 'Stand-up',
+          time_slot: 'Stand-up',
           present: 'true',
           notes: '',
           student_id: 5,
@@ -158,7 +158,7 @@ exports.seed = function(knex) {
         {
           id: 18,
           date: '2020-03-31',
-          time: 'Stand-up',
+          time_slot: 'Stand-up',
           present: 'true',
           notes: '',
           student_id: 6,
@@ -167,7 +167,7 @@ exports.seed = function(knex) {
         {
           id: 19,
           date: '2020-03-31',
-          time: 'Stand-up',
+          time_slot: 'Stand-up',
           present: 'true',
           notes: '',
           student_id: 7,
@@ -176,7 +176,7 @@ exports.seed = function(knex) {
         {
           id: 20,
           date: '2020-03-31',
-          time: 'Stand-up',
+          time_slot: 'Stand-up',
           present: 'true',
           notes: '',
           student_id: 8,
@@ -185,7 +185,7 @@ exports.seed = function(knex) {
         {
           id: 21,
           date: '2020-03-31',
-          time: 'Stand-up',
+          time_slot: 'Stand-up',
           present: 'true',
           notes: '',
           student_id: 9,
@@ -194,7 +194,7 @@ exports.seed = function(knex) {
         {
           id: 22,
           date: '2020-03-31',
-          time: 'Stand-up',
+          time_slot: 'Stand-up',
           present: 'true',
           notes: '',
           student_id: 10,
@@ -203,7 +203,7 @@ exports.seed = function(knex) {
         {
           id: 23,
           date: '2020-03-30',
-          time: 'Stand-up',
+          time_slot: 'Stand-up',
           present: 'true',
           notes: '',
           student_id: 11,
@@ -212,7 +212,7 @@ exports.seed = function(knex) {
         {
           id: 24,
           date: '2020-03-30',
-          time: 'Stand-up',
+          time_slot: 'Stand-up',
           present: 'true',
           notes: '',
           student_id: 12,
@@ -221,7 +221,7 @@ exports.seed = function(knex) {
         {
           id: 25,
           date: '2020-04-01',
-          time: 'Stand-up',
+          time_slot: 'Stand-up',
           present: 'true',
           notes: '',
           student_id: 1,
@@ -230,7 +230,7 @@ exports.seed = function(knex) {
         {
           id: 26,
           date: '2020-04-01',
-          time: 'Stand-up',
+          time_slot: 'Stand-up',
           present: 'true',
           notes: '',
           student_id: 2,
@@ -239,7 +239,7 @@ exports.seed = function(knex) {
         {
           id: 27,
           date: '2020-04-01',
-          time: 'Stand-up',
+          time_slot: 'Stand-up',
           present: 'false',
           notes: '',
           student_id: 3,
@@ -248,7 +248,7 @@ exports.seed = function(knex) {
         {
           id: 28,
           date: '2020-04-01',
-          time: 'Stand-up',
+          time_slot: 'Stand-up',
           present: 'false',
           notes: '',
           student_id: 4,
@@ -257,7 +257,7 @@ exports.seed = function(knex) {
         {
           id: 29,
           date: '2020-04-01',
-          time: 'Stand-up',
+          time_slot: 'Stand-up',
           present: 'true',
           notes: '',
           student_id: 5,
@@ -266,7 +266,7 @@ exports.seed = function(knex) {
         {
           id: 30,
           date: '2020-04-01',
-          time: 'Stand-up',
+          time_slot: 'Stand-up',
           present: 'true',
           notes: '',
           student_id: 6,
@@ -275,7 +275,7 @@ exports.seed = function(knex) {
         {
           id: 31,
           date: '2020-04-01',
-          time: 'Stand-up',
+          time_slot: 'Stand-up',
           present: 'true',
           notes: '',
           student_id: 7,
@@ -284,7 +284,7 @@ exports.seed = function(knex) {
         {
           id: 32,
           date: '2020-04-01',
-          time: 'Stand-up',
+          time_slot: 'Stand-up',
           present: 'true',
           notes: '',
           student_id: 8,
@@ -293,7 +293,7 @@ exports.seed = function(knex) {
         {
           id: 33,
           date: '2020-04-01',
-          time: 'Stand-up',
+          time_slot: 'Stand-up',
           present: 'true',
           notes: '',
           student_id: 9,
@@ -302,7 +302,7 @@ exports.seed = function(knex) {
         {
           id: 34,
           date: '2020-04-01',
-          time: 'Stand-up',
+          time_slot: 'Stand-up',
           present: 'true',
           notes: '',
           student_id: 10,
@@ -311,7 +311,7 @@ exports.seed = function(knex) {
         {
           id: 35,
           date: '2020-04-01',
-          time: 'Stand-up',
+          time_slot: 'Stand-up',
           present: 'true',
           notes: '',
           student_id: 11,
@@ -320,7 +320,7 @@ exports.seed = function(knex) {
         {
           id: 36,
           date: '2020-04-01',
-          time: 'Stand-up',
+          time_slot: 'Stand-up',
           present: 'true',
           notes: '',
           student_id: 12,
@@ -329,7 +329,7 @@ exports.seed = function(knex) {
         {
           id: 37,
           date: '2020-04-02',
-          time: 'Stand-up',
+          time_slot: 'Stand-up',
           present: 'true',
           notes: '',
           student_id: 1,
@@ -338,7 +338,7 @@ exports.seed = function(knex) {
         {
           id: 38,
           date: '2020-04-02',
-          time: 'Stand-up',
+          time_slot: 'Stand-up',
           present: 'true',
           notes: '',
           student_id: 2,
@@ -347,7 +347,7 @@ exports.seed = function(knex) {
         {
           id: 39,
           date: '2020-04-02',
-          time: 'Stand-up',
+          time_slot: 'Stand-up',
           present: 'false',
           notes: '',
           student_id: 3,
@@ -356,7 +356,7 @@ exports.seed = function(knex) {
         {
           id: 40,
           date: '2020-04-02',
-          time: 'Stand-up',
+          time_slot: 'Stand-up',
           present: 'false',
           notes: '',
           student_id: 4,
@@ -365,7 +365,7 @@ exports.seed = function(knex) {
         {
           id: 41,
           date: '2020-04-02',
-          time: 'Stand-up',
+          time_slot: 'Stand-up',
           present: 'true',
           notes: '',
           student_id: 5,
@@ -374,7 +374,7 @@ exports.seed = function(knex) {
         {
           id: 42,
           date: '2020-04-02',
-          time: 'Stand-up',
+          time_slot: 'Stand-up',
           present: 'true',
           notes: '',
           student_id: 6,
@@ -383,7 +383,7 @@ exports.seed = function(knex) {
         {
           id: 43,
           date: '2020-04-02',
-          time: 'Stand-up',
+          time_slot: 'Stand-up',
           present: 'true',
           notes: '',
           student_id: 7,
@@ -392,7 +392,7 @@ exports.seed = function(knex) {
         {
           id: 44,
           date: '2020-04-02',
-          time: 'Stand-up',
+          time_slot: 'Stand-up',
           present: 'true',
           notes: '',
           student_id: 8,
@@ -401,7 +401,7 @@ exports.seed = function(knex) {
         {
           id: 45,
           date: '2020-04-02',
-          time: 'Stand-up',
+          time_slot: 'Stand-up',
           present: 'true',
           notes: '',
           student_id: 9,
@@ -410,7 +410,7 @@ exports.seed = function(knex) {
         {
           id: 46,
           date: '2020-04-02',
-          time: 'Stand-up',
+          time_slot: 'Stand-up',
           present: 'true',
           notes: '',
           student_id: 10,
@@ -419,7 +419,7 @@ exports.seed = function(knex) {
         {
           id: 47,
           date: '2020-04-02',
-          time: 'Stand-up',
+          time_slot: 'Stand-up',
           present: 'true',
           notes: '',
           student_id: 11,
@@ -428,7 +428,7 @@ exports.seed = function(knex) {
         {
           id: 48,
           date: '2020-04-02',
-          time: 'Stand-up',
+          time_slot: 'Stand-up',
           present: 'true',
           notes: '',
           student_id: 12,
@@ -437,7 +437,7 @@ exports.seed = function(knex) {
         {
           id: 49,
           date: '2020-04-03',
-          time: 'Stand-up',
+          time_slot: 'Stand-up',
           present: 'true',
           notes: '',
           student_id: 1,
@@ -446,7 +446,7 @@ exports.seed = function(knex) {
         {
           id: 50,
           date: '2020-04-03',
-          time: 'Stand-up',
+          time_slot: 'Stand-up',
           present: 'true',
           notes: '',
           student_id: 2,
@@ -455,7 +455,7 @@ exports.seed = function(knex) {
         {
           id: 51,
           date: '2020-04-03',
-          time: 'Stand-up',
+          time_slot: 'Stand-up',
           present: 'false',
           notes: '',
           student_id: 3,
@@ -464,7 +464,7 @@ exports.seed = function(knex) {
         {
           id: 52,
           date: '2020-04-03',
-          time: 'Stand-up',
+          time_slot: 'Stand-up',
           present: 'false',
           notes: '',
           student_id: 4,
@@ -473,7 +473,7 @@ exports.seed = function(knex) {
         {
           id: 53,
           date: '2020-04-03',
-          time: 'Stand-up',
+          time_slot: 'Stand-up',
           present: 'true',
           notes: '',
           student_id: 5,
@@ -482,7 +482,7 @@ exports.seed = function(knex) {
         {
           id: 54,
           date: '2020-04-03',
-          time: 'Stand-up',
+          time_slot: 'Stand-up',
           present: 'true',
           notes: '',
           student_id: 6,
@@ -491,7 +491,7 @@ exports.seed = function(knex) {
         {
           id: 55,
           date: '2020-04-03',
-          time: 'Stand-up',
+          time_slot: 'Stand-up',
           present: 'true',
           notes: '',
           student_id: 7,
@@ -500,7 +500,7 @@ exports.seed = function(knex) {
         {
           id: 56,
           date: '2020-04-03',
-          time: 'Stand-up',
+          time_slot: 'Stand-up',
           present: 'true',
           notes: '',
           student_id: 8,
@@ -509,7 +509,7 @@ exports.seed = function(knex) {
         {
           id: 57,
           date: '2020-04-03',
-          time: 'Stand-up',
+          time_slot: 'Stand-up',
           present: 'true',
           notes: '',
           student_id: 9,
@@ -518,7 +518,7 @@ exports.seed = function(knex) {
         {
           id: 58,
           date: '2020-04-03',
-          time: 'Stand-up',
+          time_slot: 'Stand-up',
           present: 'true',
           notes: '',
           student_id: 10,
@@ -527,7 +527,7 @@ exports.seed = function(knex) {
         {
           id: 59,
           date: '2020-04-03',
-          time: 'Stand-up',
+          time_slot: 'Stand-up',
           present: 'true',
           notes: '',
           student_id: 11,
@@ -536,7 +536,7 @@ exports.seed = function(knex) {
         {
           id: 60,
           date: '2020-04-03',
-          time: 'Stand-up',
+          time_slot: 'Stand-up',
           present: 'true',
           notes: '',
           student_id: 12,

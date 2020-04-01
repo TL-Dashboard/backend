@@ -9,6 +9,7 @@ exports.seed = function(knex) {
           email: 'test@test.com',
           first_name: 'Testy',
           last_name: 'McTesterson',
+          img_url: '',
           type: 'admin',
           password: bcrypt.hashSync('testtest', 10)
         },
@@ -17,6 +18,7 @@ exports.seed = function(knex) {
           email: 'admin@test.com',
           first_name: 'Lambda',
           last_name: 'Admin',
+          img_url: '',
           type: 'admin',
           password: bcrypt.hashSync('testtest', 10)
         },
@@ -25,6 +27,7 @@ exports.seed = function(knex) {
           email: 'neo@matrix.com',
           first_name: 'Neo',
           last_name: 'Anderson',
+          img_url: '',
           type: 'admin',
           password: bcrypt.hashSync('testtest', 10)
         },
