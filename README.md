@@ -45,14 +45,15 @@ Request Body:
 Response Body:
 ```
     {
-        "id": integer (primary key for 'users' table),
+        "id": integer, (primary key for *user type* table)
+        "email": string,
         "first_name": string,
         "last_name": string,
-        "email": string,
-        "password": string (hashed),
-        "phone": string,
-        "organization": string,
         "type": string,
+        "fifth_day": string,
+        "cohort_id": integer,
+        "teamlead_id": integer, (student type only)
+        "fifth_day_tl_id": integer, (student type only)
         "token": string
     }
 ```
@@ -83,14 +84,48 @@ Response Body:
         "teamlead_id": (teamlead id),
         "fifth_day_tl_id": (5th day teamlead id),
         "attendance":[
-
-            ],
+            {
+                "id": integer,
+                "date": "2020-04-03",
+                "time_slot": "Stand-up",
+                "present": "true",
+                "notes": "",
+                "student_id": 1,
+                "assignment_id": 5
+            },
+            {
+                 ... rest of attendance
+            }
+         ],
         "grades":[
-
-            ],
+            {
+                "id": integer,
+                "date": "2020-04-03",
+                "grade": 2,
+                "notes": "",
+                "student_id": 1,
+                "assignment_id": 5,
+                "teamlead_id": 1
+            },
+            {
+                 ... rest of grades
+            }
+         ],
         "retros":[
-
-            ]
+            {
+                "id": integer,
+                "date": "2020-04-03",
+                "url": "http://github.com/TL-Dashboard",
+                "mood": 2,
+                "notes": "",
+                "student_id": 1,
+                "assignment_id": 5,
+                "teamlead_id": 1
+            },
+            {
+                 ... rest of retros
+            }
+         ]
     },
     {
         ... rest of students/data for specified team lead
@@ -136,7 +171,7 @@ Response Body:
  ```
 
 ## Logout
-### Get user log out:
+### User log out:
 GET to ```/auth/logout```
 
 Response Body:
