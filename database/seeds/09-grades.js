@@ -433,16 +433,16 @@ exports.seed = function(knex) {
           teamlead_id: 2,
           retro_id: 43
         },
-        {
-          id: 44,
-          date: "2020-04-02",
-          grade: 2,
-          notes: "",
-          student_id: 8,
-          assignment_id: 4,
-          teamlead_id: 2,
-          retro_id: 44
-        },
+        // {
+        //   id: 44,
+        //   date: "2020-04-02",
+        //   grade: 2,
+        //   notes: "",
+        //   student_id: 8,
+        //   assignment_id: 4,
+        //   teamlead_id: 2,
+        //   retro_id: 44
+        // },
         {
           id: 45,
           date: "2020-04-02",
@@ -503,16 +503,16 @@ exports.seed = function(knex) {
           teamlead_id: 1,
           retro_id: 50
         },
-        {
-          id: 51,
-          date: "2020-04-03",
-          grade: 1,
-          notes: "",
-          student_id: 3,
-          assignment_id: 5,
-          teamlead_id: 1,
-          retro_id: 51
-        },
+        // {
+        //   id: 51,
+        //   date: "2020-04-03",
+        //   grade: 1,
+        //   notes: "",
+        //   student_id: 3,
+        //   assignment_id: 5,
+        //   teamlead_id: 1,
+        //   retro_id: 51
+        // },
         {
           id: 52,
           date: "2020-04-03",
@@ -553,16 +553,16 @@ exports.seed = function(knex) {
           teamlead_id: 2,
           retro_id: 55
         },
-        {
-          id: 56,
-          date: "2020-04-03",
-          grade: 2,
-          notes: "",
-          student_id: 8,
-          assignment_id: 5,
-          teamlead_id: 2,
-          retro_id: 56
-        },
+        // {
+        //   id: 56,
+        //   date: "2020-04-03",
+        //   grade: 2,
+        //   notes: "",
+        //   student_id: 8,
+        //   assignment_id: 5,
+        //   teamlead_id: 2,
+        //   retro_id: 56
+        // },
         {
           id: 57,
           date: "2020-04-03",
@@ -583,16 +583,16 @@ exports.seed = function(knex) {
           teamlead_id: 2,
           retro_id: 58
         },
-        {
-          id: 59,
-          date: "2020-04-03",
-          grade: 2,
-          notes: "",
-          student_id: 11,
-          assignment_id: 5,
-          teamlead_id: 2,
-          retro_id: 59
-        },
+        // {
+        //   id: 59,
+        //   date: "2020-04-03",
+        //   grade: 2,
+        //   notes: "",
+        //   student_id: 11,
+        //   assignment_id: 5,
+        //   teamlead_id: 2,
+        //   retro_id: 59
+        // },
         {
           id: 60,
           date: "2020-04-03",

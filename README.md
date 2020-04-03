@@ -1,5 +1,5 @@
 # API - Preliminary Documentation
-base URL: ``` /api ```
+base URL: ``` https://tldashboard.herokuapp.com/api ```
 
 ## Authentication
 ### Registration:

@@ -33,7 +33,7 @@ exports.up = function(knex) {
       .unsigned()
       .notNullable()
       .references("id")
-      .inTable("teamleads")
+      .inTable("retros")
       .onDelete("CASCADE")
       .onUpdate("CASCADE");
   });
