@@ -21,7 +21,16 @@ exports.up = function(knex) {
         .inTable("assignments")
         .onDelete("CASCADE")
         .onUpdate("CASCADE");
+        tbl
+        .integer("teamlead_id")
+        .unsigned()
+        .notNullable()
+        .references("id")
+        .inTable("assignments")
+        .onDelete("CASCADE")
+        .onUpdate("CASCADE");
     });
+    
   };
   
   exports.down = function(knex, Promise) {

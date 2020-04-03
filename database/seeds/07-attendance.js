@@ -9,7 +9,8 @@ exports.seed = function(knex) {
           present: 'true',
           notes: '',
           student_id: 1,
-          assignment_id: 1 
+          assignment_id: 1,
+          teamlead_id: 1 
         },
         {
           id: 2,
@@ -18,7 +19,8 @@ exports.seed = function(knex) {
           present: 'true',
           notes: '',
           student_id: 2,
-          assignment_id: 1 
+          assignment_id: 1,
+          teamlead_id: 1 
         },
         {
           id: 3,
@@ -27,7 +29,8 @@ exports.seed = function(knex) {
           present: 'true',
           notes: '',
           student_id: 3,
-          assignment_id: 1 
+          assignment_id: 1,
+          teamlead_id: 1 
         },
         {
           id: 4,
@@ -36,7 +39,8 @@ exports.seed = function(knex) {
           present: 'true',
           notes: '',
           student_id: 4,
-          assignment_id: 1
+          assignment_id: 1,
+          teamlead_id: 1
         },
         {
           id: 5,
@@ -45,7 +49,8 @@ exports.seed = function(knex) {
           present: 'true',
           notes: '',
           student_id: 5,
-          assignment_id: 1 
+          assignment_id: 1,
+          teamlead_id: 1 
         },
         {
           id: 6,
@@ -54,7 +59,8 @@ exports.seed = function(knex) {
           present: 'true',
           notes: '',
           student_id: 6,
-          assignment_id: 1 
+          assignment_id: 1,
+          teamlead_id: 2 
         },
         {
           id: 7,
@@ -63,7 +69,8 @@ exports.seed = function(knex) {
           present: 'true',
           notes: '',
           student_id: 7,
-          assignment_id: 1
+          assignment_id: 1,
+          teamlead_id: 2
         },
         {
           id: 8,
@@ -72,7 +79,8 @@ exports.seed = function(knex) {
           present: 'true',
           notes: '',
           student_id: 8,
-          assignment_id: 1
+          assignment_id: 1,
+          teamlead_id: 2
         },
         {
           id: 9,
@@ -81,7 +89,8 @@ exports.seed = function(knex) {
           present: 'true',
           notes: '',
           student_id: 9,
-          assignment_id: 1
+          assignment_id: 1,
+          teamlead_id: 2
         },
         {
           id: 10,
@@ -90,7 +99,8 @@ exports.seed = function(knex) {
           present: 'true',
           notes: '',
           student_id: 10,
-          assignment_id: 1
+          assignment_id: 1,
+          teamlead_id: 2
         },
         {
           id: 11,
@@ -99,7 +109,8 @@ exports.seed = function(knex) {
           present: 'true',
           notes: '',
           student_id: 11,
-          assignment_id: 1
+          assignment_id: 1,
+          teamlead_id: 2
         },
         {
           id: 12,
@@ -108,7 +119,8 @@ exports.seed = function(knex) {
           present: 'true',
           notes: '',
           student_id: 12,
-          assignment_id: 1
+          assignment_id: 1,
+          teamlead_id: 2
         },
         {
           id: 13,
@@ -117,7 +129,8 @@ exports.seed = function(knex) {
           present: 'true',
           notes: '',
           student_id: 1,
-          assignment_id: 2 
+          assignment_id: 2,
+          teamlead_id: 1 
         },
         {
           id: 14,
@@ -126,7 +139,8 @@ exports.seed = function(knex) {
           present: 'true',
           notes: '',
           student_id: 2,
-          assignment_id: 2 
+          assignment_id: 2,
+          teamlead_id: 1 
         },
         {
           id: 15,
@@ -135,7 +149,8 @@ exports.seed = function(knex) {
           present: 'false',
           notes: '',
           student_id: 3,
-          assignment_id: 2 
+          assignment_id: 2,
+          teamlead_id: 1 
         },
         {
           id: 16,
@@ -144,7 +159,8 @@ exports.seed = function(knex) {
           present: 'true',
           notes: '',
           student_id: 4,
-          assignment_id: 2 
+          assignment_id: 2,
+          teamlead_id: 1 
         },
         {
           id: 17,
@@ -153,7 +169,8 @@ exports.seed = function(knex) {
           present: 'true',
           notes: '',
           student_id: 5,
-          assignment_id: 2 
+          assignment_id: 2,
+          teamlead_id: 1 
         },
         {
           id: 18,
@@ -162,7 +179,8 @@ exports.seed = function(knex) {
           present: 'true',
           notes: '',
           student_id: 6,
-          assignment_id: 2 
+          assignment_id: 2,
+          teamlead_id: 2 
         },
         {
           id: 19,
@@ -171,7 +189,8 @@ exports.seed = function(knex) {
           present: 'true',
           notes: '',
           student_id: 7,
-          assignment_id: 2 
+          assignment_id: 2,
+          teamlead_id: 2 
         },
         {
           id: 20,
@@ -180,7 +199,8 @@ exports.seed = function(knex) {
           present: 'true',
           notes: '',
           student_id: 8,
-          assignment_id: 2 
+          assignment_id: 2,
+          teamlead_id: 2 
         },
         {
           id: 21,
@@ -189,7 +209,8 @@ exports.seed = function(knex) {
           present: 'true',
           notes: '',
           student_id: 9,
-          assignment_id: 2 
+          assignment_id: 2,
+          teamlead_id: 2 
         },
         {
           id: 22,
@@ -198,7 +219,8 @@ exports.seed = function(knex) {
           present: 'true',
           notes: '',
           student_id: 10,
-          assignment_id: 2 
+          assignment_id: 2,
+          teamlead_id: 2 
         },
         {
           id: 23,
@@ -207,7 +229,8 @@ exports.seed = function(knex) {
           present: 'true',
           notes: '',
           student_id: 11,
-          assignment_id: 2
+          assignment_id: 2,
+          teamlead_id: 2
         },
         {
           id: 24,
@@ -216,7 +239,8 @@ exports.seed = function(knex) {
           present: 'true',
           notes: '',
           student_id: 12,
-          assignment_id: 2
+          assignment_id: 2,
+          teamlead_id: 2
         },
         {
           id: 25,
@@ -225,7 +249,8 @@ exports.seed = function(knex) {
           present: 'true',
           notes: '',
           student_id: 1,
-          assignment_id: 3 
+          assignment_id: 3,
+          teamlead_id: 1 
         },
         {
           id: 26,
@@ -234,7 +259,8 @@ exports.seed = function(knex) {
           present: 'true',
           notes: '',
           student_id: 2,
-          assignment_id: 3 
+          assignment_id: 3,
+          teamlead_id: 1 
         },
         {
           id: 27,
@@ -243,7 +269,8 @@ exports.seed = function(knex) {
           present: 'false',
           notes: '',
           student_id: 3,
-          assignment_id: 3 
+          assignment_id: 3,
+          teamlead_id: 1 
         },
         {
           id: 28,
@@ -252,7 +279,8 @@ exports.seed = function(knex) {
           present: 'false',
           notes: '',
           student_id: 4,
-          assignment_id: 3
+          assignment_id: 3,
+          teamlead_id: 1
         },
         {
           id: 29,
@@ -261,7 +289,8 @@ exports.seed = function(knex) {
           present: 'true',
           notes: '',
           student_id: 5,
-          assignment_id: 3 
+          assignment_id: 3,
+          teamlead_id: 1 
         },
         {
           id: 30,
@@ -270,7 +299,8 @@ exports.seed = function(knex) {
           present: 'true',
           notes: '',
           student_id: 6,
-          assignment_id: 3 
+          assignment_id: 3,
+          teamlead_id: 2 
         },
         {
           id: 31,
@@ -279,7 +309,8 @@ exports.seed = function(knex) {
           present: 'true',
           notes: '',
           student_id: 7,
-          assignment_id: 3
+          assignment_id: 3,
+          teamlead_id: 2
         },
         {
           id: 32,
@@ -288,7 +319,8 @@ exports.seed = function(knex) {
           present: 'true',
           notes: '',
           student_id: 8,
-          assignment_id: 3
+          assignment_id: 3,
+          teamlead_id: 2
         },
         {
           id: 33,
@@ -297,7 +329,8 @@ exports.seed = function(knex) {
           present: 'true',
           notes: '',
           student_id: 9,
-          assignment_id: 3
+          assignment_id: 3,
+          teamlead_id: 2
         },
         {
           id: 34,
@@ -306,7 +339,8 @@ exports.seed = function(knex) {
           present: 'true',
           notes: '',
           student_id: 10,
-          assignment_id: 3
+          assignment_id: 3,
+          teamlead_id: 2
         },
         {
           id: 35,
@@ -315,7 +349,8 @@ exports.seed = function(knex) {
           present: 'true',
           notes: '',
           student_id: 11,
-          assignment_id: 3
+          assignment_id: 3,
+          teamlead_id: 2
         },
         {
           id: 36,
@@ -324,7 +359,8 @@ exports.seed = function(knex) {
           present: 'true',
           notes: '',
           student_id: 12,
-          assignment_id: 3
+          assignment_id: 3,
+          teamlead_id: 2
         },
         {
           id: 37,
@@ -333,7 +369,8 @@ exports.seed = function(knex) {
           present: 'true',
           notes: '',
           student_id: 1,
-          assignment_id: 4 
+          assignment_id: 4,
+          teamlead_id: 1 
         },
         {
           id: 38,
@@ -342,7 +379,8 @@ exports.seed = function(knex) {
           present: 'true',
           notes: '',
           student_id: 2,
-          assignment_id: 4 
+          assignment_id: 4,
+          teamlead_id: 1 
         },
         {
           id: 39,
@@ -351,7 +389,8 @@ exports.seed = function(knex) {
           present: 'false',
           notes: '',
           student_id: 3,
-          assignment_id: 4 
+          assignment_id: 4,
+          teamlead_id: 1 
         },
         {
           id: 40,
@@ -360,7 +399,8 @@ exports.seed = function(knex) {
           present: 'false',
           notes: '',
           student_id: 4,
-          assignment_id: 4 
+          assignment_id: 4,
+          teamlead_id: 1 
         },
         {
           id: 41,
@@ -369,7 +409,8 @@ exports.seed = function(knex) {
           present: 'true',
           notes: '',
           student_id: 5,
-          assignment_id: 4 
+          assignment_id: 4,
+          teamlead_id: 1 
         },
         {
           id: 42,
@@ -378,7 +419,8 @@ exports.seed = function(knex) {
           present: 'true',
           notes: '',
           student_id: 6,
-          assignment_id: 4 
+          assignment_id: 4,
+          teamlead_id: 2 
         },
         {
           id: 43,
@@ -387,7 +429,8 @@ exports.seed = function(knex) {
           present: 'true',
           notes: '',
           student_id: 7,
-          assignment_id: 4 
+          assignment_id: 4,
+          teamlead_id: 2 
         },
         {
           id: 44,
@@ -396,7 +439,8 @@ exports.seed = function(knex) {
           present: 'true',
           notes: '',
           student_id: 8,
-          assignment_id: 4 
+          assignment_id: 4,
+          teamlead_id: 2 
         },
         {
           id: 45,
@@ -405,7 +449,8 @@ exports.seed = function(knex) {
           present: 'true',
           notes: '',
           student_id: 9,
-          assignment_id: 4 
+          assignment_id: 4,
+          teamlead_id: 2 
         },
         {
           id: 46,
@@ -414,7 +459,8 @@ exports.seed = function(knex) {
           present: 'true',
           notes: '',
           student_id: 10,
-          assignment_id: 4 
+          assignment_id: 4,
+          teamlead_id: 2 
         },
         {
           id: 47,
@@ -423,7 +469,8 @@ exports.seed = function(knex) {
           present: 'true',
           notes: '',
           student_id: 11,
-          assignment_id: 4
+          assignment_id: 4,
+          teamlead_id: 2
         },
         {
           id: 48,
@@ -432,7 +479,8 @@ exports.seed = function(knex) {
           present: 'true',
           notes: '',
           student_id: 12,
-          assignment_id: 4
+          assignment_id: 4,
+          teamlead_id: 2
         },
         {
           id: 49,
@@ -441,7 +489,8 @@ exports.seed = function(knex) {
           present: 'true',
           notes: '',
           student_id: 1,
-          assignment_id: 5 
+          assignment_id: 5,
+          teamlead_id: 1 
         },
         {
           id: 50,
@@ -450,7 +499,8 @@ exports.seed = function(knex) {
           present: 'true',
           notes: '',
           student_id: 2,
-          assignment_id: 5 
+          assignment_id: 5,
+          teamlead_id: 1 
         },
         {
           id: 51,
@@ -459,7 +509,8 @@ exports.seed = function(knex) {
           present: 'false',
           notes: '',
           student_id: 3,
-          assignment_id: 5 
+          assignment_id: 5,
+          teamlead_id: 1 
         },
         {
           id: 52,
@@ -468,7 +519,8 @@ exports.seed = function(knex) {
           present: 'false',
           notes: '',
           student_id: 4,
-          assignment_id: 5 
+          assignment_id: 5,
+          teamlead_id: 1 
         },
         {
           id: 53,
@@ -477,7 +529,8 @@ exports.seed = function(knex) {
           present: 'true',
           notes: '',
           student_id: 5,
-          assignment_id: 5 
+          assignment_id: 5,
+          teamlead_id: 1 
         },
         {
           id: 54,
@@ -486,7 +539,8 @@ exports.seed = function(knex) {
           present: 'true',
           notes: '',
           student_id: 6,
-          assignment_id: 5 
+          assignment_id: 5,
+          teamlead_id: 2 
         },
         {
           id: 55,
@@ -495,7 +549,8 @@ exports.seed = function(knex) {
           present: 'true',
           notes: '',
           student_id: 7,
-          assignment_id: 5 
+          assignment_id: 5,
+          teamlead_id: 2 
         },
         {
           id: 56,
@@ -504,7 +559,8 @@ exports.seed = function(knex) {
           present: 'true',
           notes: '',
           student_id: 8,
-          assignment_id: 5 
+          assignment_id: 5,
+          teamlead_id: 2 
         },
         {
           id: 57,
@@ -513,7 +569,8 @@ exports.seed = function(knex) {
           present: 'true',
           notes: '',
           student_id: 9,
-          assignment_id: 5 
+          assignment_id: 5,
+          teamlead_id: 2 
         },
         {
           id: 58,
@@ -522,7 +579,8 @@ exports.seed = function(knex) {
           present: 'true',
           notes: '',
           student_id: 10,
-          assignment_id: 5 
+          assignment_id: 5,
+          teamlead_id: 2 
         },
         {
           id: 59,
@@ -531,7 +589,8 @@ exports.seed = function(knex) {
           present: 'true',
           notes: '',
           student_id: 11,
-          assignment_id: 5
+          assignment_id: 5,
+          teamlead_id: 2
         },
         {
           id: 60,
@@ -540,7 +599,8 @@ exports.seed = function(knex) {
           present: 'true',
           notes: '',
           student_id: 12,
-          assignment_id: 5
+          assignment_id: 5,
+          teamlead_id: 2
         },
       ]);
     });
