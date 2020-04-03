@@ -32,7 +32,7 @@ server.use('/api/retros', verifyToken, retrosRouter);
 server.use('/api/tickets', verifyToken, ticketsRouter);
 
 server.get('/', (req, res) => {
-  res.send(`<h2>Server is online!</h2><br><div>Visit: <a href='https://github.com/build-international-school/Back-End'>https://github.com/build-international-school/Back-End</a> for more API info.</div>`)
+  res.send(`<h2>Server is online!</h2><br><div>Visit: <a href='https://github.com/TL-Dashboard/backend'>https://github.com/TL-Dashboard/backend</a> for more API info.</div>`)
   });
 
 module.exports = server;
