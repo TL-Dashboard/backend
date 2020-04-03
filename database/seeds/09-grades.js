@@ -143,16 +143,16 @@ exports.seed = function(knex) {
           teamlead_id: 1,
           retro_id: 14
         },
-        {
-          id: 15,
-          date: "2020-03-31",
-          grade: 1,
-          notes: "",
-          student_id: 3,
-          assignment_id: 2,
-          teamlead_id: 1,
-          retro_id: 15
-        },
+        // {
+        //   id: 15,
+        //   date: "2020-03-31",
+        //   grade: 1,
+        //   notes: "",
+        //   student_id: 3,
+        //   assignment_id: 2,
+        //   teamlead_id: 1,
+        //   retro_id: 15
+        // },
         {
           id: 16,
           date: "2020-03-31",
@@ -263,26 +263,26 @@ exports.seed = function(knex) {
           teamlead_id: 1,
           retro_id: 26
         },
-        {
-          id: 27,
-          date: "2020-04-01",
-          grade: 1,
-          notes: "",
-          student_id: 3,
-          assignment_id: 3,
-          teamlead_id: 1,
-          retro_id: 27
-        },
-        {
-          id: 28,
-          date: "2020-04-01",
-          grade: 2,
-          notes: "",
-          student_id: 4,
-          assignment_id: 3,
-          teamlead_id: 1,
-          retro_id: 28
-        },
+        // {
+        //   id: 27,
+        //   date: "2020-04-01",
+        //   grade: 1,
+        //   notes: "",
+        //   student_id: 3,
+        //   assignment_id: 3,
+        //   teamlead_id: 1,
+        //   retro_id: 27
+        // },
+        // {
+        //   id: 28,
+        //   date: "2020-04-01",
+        //   grade: 2,
+        //   notes: "",
+        //   student_id: 4,
+        //   assignment_id: 3,
+        //   teamlead_id: 1,
+        //   retro_id: 28
+        // },
         {
           id: 29,
           date: "2020-04-01",
@@ -313,16 +313,16 @@ exports.seed = function(knex) {
           teamlead_id: 2,
           retro_id: 31
         },
-        {
-          id: 32,
-          date: "2020-04-01",
-          grade: 2,
-          notes: "",
-          student_id: 8,
-          assignment_id: 3,
-          teamlead_id: 2,
-          retro_id: 32
-        },
+        // {
+        //   id: 32,
+        //   date: "2020-04-01",
+        //   grade: 2,
+        //   notes: "",
+        //   student_id: 8,
+        //   assignment_id: 3,
+        //   teamlead_id: 2,
+        //   retro_id: 32
+        // },
         {
           id: 33,
           date: "2020-04-01",
@@ -383,16 +383,16 @@ exports.seed = function(knex) {
           teamlead_id: 1,
           retro_id: 38
         },
-        {
-          id: 39,
-          date: "2020-04-02",
-          grade: 1,
-          notes: "",
-          student_id: 3,
-          assignment_id: 4,
-          teamlead_id: 1,
-          retro_id: 39
-        },
+        // {
+        //   id: 39,
+        //   date: "2020-04-02",
+        //   grade: 1,
+        //   notes: "",
+        //   student_id: 3,
+        //   assignment_id: 4,
+        //   teamlead_id: 1,
+        //   retro_id: 39
+        // },
         {
           id: 40,
           date: "2020-04-02",
@@ -483,16 +483,16 @@ exports.seed = function(knex) {
           teamlead_id: 2,
           retro_id: 48
         },
-        {
-          id: 49,
-          date: "2020-04-03",
-          grade: 2,
-          notes: "",
-          student_id: 1,
-          assignment_id: 5,
-          teamlead_id: 1,
-          retro_id: 49
-        },
+        // {
+        //   id: 49,
+        //   date: "2020-04-03",
+        //   grade: 2,
+        //   notes: "",
+        //   student_id: 1,
+        //   assignment_id: 5,
+        //   teamlead_id: 1,
+        //   retro_id: 49
+        // },
         {
           id: 50,
           date: "2020-04-03",
@@ -513,26 +513,26 @@ exports.seed = function(knex) {
         //   teamlead_id: 1,
         //   retro_id: 51
         // },
-        {
-          id: 52,
-          date: "2020-04-03",
-          grade: 2,
-          notes: "",
-          student_id: 4,
-          assignment_id: 5,
-          teamlead_id: 1,
-          retro_id: 52
-        },
-        {
-          id: 53,
-          date: "2020-04-03",
-          grade: 2,
-          notes: "",
-          student_id: 5,
-          assignment_id: 5,
-          teamlead_id: 1,
-          retro_id: 53
-        },
+        // {
+        //   id: 52,
+        //   date: "2020-04-03",
+        //   grade: 2,
+        //   notes: "",
+        //   student_id: 4,
+        //   assignment_id: 5,
+        //   teamlead_id: 1,
+        //   retro_id: 52
+        // },
+        // {
+        //   id: 53,
+        //   date: "2020-04-03",
+        //   grade: 2,
+        //   notes: "",
+        //   student_id: 5,
+        //   assignment_id: 5,
+        //   teamlead_id: 1,
+        //   retro_id: 53
+        // },
         {
           id: 54,
           date: "2020-04-03",
@@ -573,16 +573,16 @@ exports.seed = function(knex) {
           teamlead_id: 2,
           retro_id: 57
         },
-        {
-          id: 58,
-          date: "2020-04-03",
-          grade: 2,
-          notes: "",
-          student_id: 10,
-          assignment_id: 5,
-          teamlead_id: 2,
-          retro_id: 58
-        },
+        // {
+        //   id: 58,
+        //   date: "2020-04-03",
+        //   grade: 2,
+        //   notes: "",
+        //   student_id: 10,
+        //   assignment_id: 5,
+        //   teamlead_id: 2,
+        //   retro_id: 58
+        // },
         // {
         //   id: 59,
         //   date: "2020-04-03",

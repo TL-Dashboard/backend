@@ -383,16 +383,16 @@ exports.seed = function(knex) {
             assignment_id: 4,
             teamlead_id: 1
           },
-          {
-            id: 39,
-            date: "2020-04-02",
-            url: "http://github.com/TL-Dashboard",
-            mood: 1,
-            notes: "",
-            student_id: 3,
-            assignment_id: 4,
-            teamlead_id: 1
-          },
+          // {
+          //   id: 39,
+          //   date: "2020-04-02",
+          //   url: "http://github.com/TL-Dashboard",
+          //   mood: 1,
+          //   notes: "",
+          //   student_id: 3,
+          //   assignment_id: 4,
+          //   teamlead_id: 1
+          // },
           {
             id: 40,
             date: "2020-04-02",
@@ -513,26 +513,26 @@ exports.seed = function(knex) {
           //   assignment_id: 5,
           //   teamlead_id: 1
           // },
-          {
-            id: 52,
-            date: "2020-04-03",
-            url: "http://github.com/TL-Dashboard",
-            mood: 2,
-            notes: "",
-            student_id: 4,
-            assignment_id: 5,
-            teamlead_id: 1
-          },
-          {
-            id: 53,
-            date: "2020-04-03",
-            url: "http://github.com/TL-Dashboard",
-            mood: 2,
-            notes: "",
-            student_id: 5,
-            assignment_id: 5,
-            teamlead_id: 1
-          },
+          // {
+          //   id: 52,
+          //   date: "2020-04-03",
+          //   url: "http://github.com/TL-Dashboard",
+          //   mood: 2,
+          //   notes: "",
+          //   student_id: 4,
+          //   assignment_id: 5,
+          //   teamlead_id: 1
+          // },
+          // {
+          //   id: 53,
+          //   date: "2020-04-03",
+          //   url: "http://github.com/TL-Dashboard",
+          //   mood: 2,
+          //   notes: "",
+          //   student_id: 5,
+          //   assignment_id: 5,
+          //   teamlead_id: 1
+          // },
           {
             id: 54,
             date: "2020-04-03",
