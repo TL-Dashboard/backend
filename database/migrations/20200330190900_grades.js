@@ -28,6 +28,14 @@ exports.up = function(knex) {
       .inTable("teamleads")
       .onDelete("CASCADE")
       .onUpdate("CASCADE");
+    tbl
+      .integer("retro_id")
+      .unsigned()
+      .notNullable()
+      .references("id")
+      .inTable("teamleads")
+      .onDelete("CASCADE")
+      .onUpdate("CASCADE");
   });
 };
 
