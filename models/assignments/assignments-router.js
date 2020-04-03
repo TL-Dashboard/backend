@@ -29,6 +29,21 @@ router.get("/:id", (req, res) => {
     });
 });
 
+router.get("/cohort/:id", (req, res) => {
+  const { id } = req.params;
+  Assignments.findByCohort(id)
+    .then(records => {
+      if (records) {
+        res.json(records);
+      } else {
+        res.status(404).json({ message: `Could not find records ${id}` });
+      }
+    })
+    .catch(err => {
+      res.status(500).json({ message: "Failed to get records" });
+    });
+});
+
 router.get("/query/:filter", (req, res) => {
   Assignments.findBy(req.query)
     .then(record => {

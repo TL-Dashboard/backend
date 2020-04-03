@@ -5,6 +5,7 @@ module.exports = {
   find,
   findBy,
   findById,
+  findByCohort,
   update,
   remove
 };
@@ -34,6 +35,12 @@ function findById(id) {
     .where({ id })
     .first();
 }
+
+function findByCohort(id) {
+    return db("assignments")
+      .select("*")
+      .where("cohort_id", id );
+  }
 
 function update(changes, id) {
   return db("assignments")
