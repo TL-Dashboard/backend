@@ -4,6 +4,16 @@ exports.seed = function(knex) {
       .then(function() {
         return knex("retros").insert([
           {
+            id: 0,
+            date: "2020-04-01",
+            url: "Does not exist",
+            mood: 0,
+            notes: "",
+            student_id: 1,
+            assignment_id: 1,
+            teamlead_id: 1
+          },
+          {
             id: 1,
             date: "2020-03-30",
             url: "http://github.com/TL-Dashboard",
