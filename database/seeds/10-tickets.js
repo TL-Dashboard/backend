@@ -9,7 +9,7 @@ exports.seed = function(knex) {
             type: 'Attendance',
             date: '2020-04-01',
             description: 'Bryan will be absent Friday 04/03',
-            status: 'In Progress',
+            status: 'Completed',
             sectionlead_id: 1,
             teamlead_id: 1,
             student_id: 1
@@ -20,7 +20,7 @@ exports.seed = function(knex) {
             type: 'Support Hours',
             date: '2020-04-01',
             description: 'Lexie is requesting support hours',
-            status: 'In Progress',
+            status: 'Completed',
             sectionlead_id: 1,
             teamlead_id: 1,
             student_id: 2
@@ -30,8 +30,8 @@ exports.seed = function(knex) {
             posted_by: "Robert Gordon",
             type: 'Attendance',
             date: '2020-04-01',
-            description: 'Student has missed three days',
-            status: 'In Progress',
+            description: 'Jimbo has missed three days',
+            status: 'Completed',
             sectionlead_id: 1,
             teamlead_id: 1,
             student_id: 3
@@ -41,8 +41,8 @@ exports.seed = function(knex) {
             posted_by: "Robert Gordon",
             type: 'Grades',
             date: '2020-04-01',
-            description: 'Student has recieved a 1 on last sprint',
-            status: 'In Progress',
+            description: 'Bart has recieved a 1 on last sprint',
+            status: 'In-Progress',
             sectionlead_id: 1,
             teamlead_id: 1,
             student_id: 3
@@ -53,7 +53,7 @@ exports.seed = function(knex) {
             type: 'Other',
             date: '2020-04-01',
             description: 'When can Lambda begin using this new dashboard?',
-            status: 'In Progress',
+            status: 'In-Progress',
             sectionlead_id: 1,
             teamlead_id: 1,
             student_id: null

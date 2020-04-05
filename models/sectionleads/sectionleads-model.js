@@ -31,6 +31,7 @@ function find() {
 }
 
 function findBy(filter) {
+  console.log("filter", filter);
   return db("sectionleads")
     .where(filter)
     .orderBy("id", "desc");

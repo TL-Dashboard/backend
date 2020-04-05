@@ -28,6 +28,20 @@ router.get('/:id', (req, res) => {
   });
 });
 
+router.get("/query/:filter", (req, res) => {
+  SectionLeads.findBy(req.query)
+    .then(record => {
+      if (record) {
+        res.json(record);
+      } else {
+        res.status(404).json({ message: `Could not find record ${param}` });
+      }
+    })
+    .catch(err => {
+      res.status(500).json({ message: "Failed to get records" });
+    });
+});
+
 router.put('/:id', (req, res) => {
   const { id } = req.params;
   const changes = req.body;
