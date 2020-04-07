@@ -16,7 +16,7 @@ exports.seed = function(knex) {
         {
           id: 2,
           date: "2020-03-30",
-          grade: 3,
+          grade: 2,
           notes: "",
           student_id: 2,
           assignment_id: 1,
@@ -136,7 +136,7 @@ exports.seed = function(knex) {
         {
           id: 14,
           date: "2020-03-31",
-          grade: 3,
+          grade: 2,
           notes: "",
           student_id: 2,
           assignment_id: 2,
@@ -196,7 +196,7 @@ exports.seed = function(knex) {
         {
           id: 20,
           date: "2020-03-31",
-          grade: 2,
+          grade: 1,
           notes: "",
           student_id: 8,
           assignment_id: 2,
@@ -246,7 +246,7 @@ exports.seed = function(knex) {
         {
           id: 25,
           date: "2020-04-01",
-          grade: 2,
+          grade: 3,
           notes: "",
           student_id: 1,
           assignment_id: 3,
@@ -256,7 +256,7 @@ exports.seed = function(knex) {
         {
           id: 26,
           date: "2020-04-01",
-          grade: 3,
+          grade: 2,
           notes: "",
           student_id: 2,
           assignment_id: 3,
@@ -446,7 +446,7 @@ exports.seed = function(knex) {
         {
           id: 45,
           date: "2020-04-02",
-          grade: 2,
+          grade: 3,
           notes: "",
           student_id: 9,
           assignment_id: 4,
@@ -566,7 +566,7 @@ exports.seed = function(knex) {
         {
           id: 57,
           date: "2020-04-03",
-          grade: 2,
+          grade: 3,
           notes: "",
           student_id: 9,
           assignment_id: 5,

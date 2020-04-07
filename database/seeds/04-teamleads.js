@@ -17,13 +17,13 @@ exports.seed = function(knex) {
         },
         {
           id: 2,
-          email: 'alexander@besse.com',
-          first_name: 'Alexander',
-          last_name: 'Besse',
+          email: 'severus@snape.com',
+          first_name: 'Severus',
+          last_name: 'Snape',
           img_url: '',
           type: 'TL',
           fifth_day: 'Saturday',
-          password: bcrypt.hashSync('testtest', 10),
+          password: bcrypt.hashSync('Patronus1', 10),
           cohort_id: 1,
         },
         {
