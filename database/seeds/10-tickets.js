@@ -85,7 +85,7 @@ exports.seed = function(knex) {
             posted_by: "Robert Gordon",
             type: 'Attendance',
             date: '2020-04-01',
-            description: 'Harry will be absent Friday 04/03',
+            description: 'Please report to platform 11 3/4',
             status: 'Completed',
             sectionlead_id: 1,
             teamlead_id: 1,
