@@ -31,7 +31,7 @@ describe("server", function() {
         .get("/")
         .then(res => {
           expect(res.text).toEqual(
-            "<h2>Server is online!</h2><br><div>Visit: <a href='https://github.com/build-international-school/Back-End'>https://github.com/build-international-school/Back-End</a> for more API info.</div>"
+            "<h2>Server is online!</h2><br><div>Visit: <a href='https://github.com/TL-Dashboard/backend'>https://github.com/TL-Dashboard/backend</a> for more API info.</div>"
           );
         });
     });
